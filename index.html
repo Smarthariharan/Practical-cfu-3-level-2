@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>NFT preview card component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@500&family=Outfit:wght@400;593&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --Very-dark-blue: hsl(217, 54%, 11%);
+        --Verydark-blue: hsl(216, 50%, 16%);
+        --Very-darkblue: hsl(215, 32%, 27%);
+        --White: hsl(0, 0%, 100%);
+        --Soft-blue: hsl(215, 51%, 70%);
+        --Cyan: hsl(178, 100%, 50%);
+      }
+      body {
+        font-family: Outfit;
+        font-weight: 300, 400, 600;
+        max-width: 80%;
+        font-size: 18px;
+        background-color: var(--Very-dark-blue);
+      }
+      .all {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+        gap: 50px;
+      }
+      .div-1 {
+        background-color: var(--Verydark-blue);
+        border-radius: 20px;
+        width: 300px;
+        height: 500px;
+        margin-left: 20px;
+        /* margin-top: 200px; */
+      }
+      .img-1 {
+        margin-left: 20px;
+      }
+      .img-1 img {
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      .con-1 {
+        color: var(--White);
+        margin-left: 22px;
+        margin-top: 20px;
+        font-weight: 600;
+      }
+      .con-2 {
+        color: var(--Soft-blue);
+        margin-left: 22px;
+        font-size: 16px;
+        margin-top: 15px;
+      }
+      .con-3 {
+        margin-left: 22px;
+        margin-top: 15px;
+
+        justify-content: space-between;
+        /* background-color: rebeccapurple; */
+        width: 80%;
+        border-bottom: 1px solid var(--Very-darkblue);
+        height: 45px;
+      }
+      .con-3-1 {
+        display: inline-flex;
+        justify-content: space-between;
+        gap: 5px;
+        color: var(--Cyan);
+        font-weight: 400;
+
+        font-size: 16px;
+      }
+      .con-3-2 {
+        display: inline-flex;
+        justify-content: space-between;
+        margin-left: 43px;
+        gap: 5px;
+        color: var(--Soft-blue);
+        font-weight: 400;
+      }
+      .con-4 {
+        color: var(--Soft-blue);
+        margin-top: 10px;
+        /* background-color: red; */
+        width: 70%;
+        font-size: 15px;
+        margin-left: 30px;
+      }
+      .con-4 img {
+        display: flex;
+        /* background-color: aqua; */
+      }
+      .end-img {
+        display: inline-flex;
+
+        height: 30px;
+        border: 1px solid var(--White);
+        border-radius: 50%;
+      }
+      .end-2 {
+        /* display: inline-flex; */
+        float: right;
+        margin-top: 5px;
+      }
+      .end-1 {
+        color: var(--White);
+        /* margin-right: 15px; */
+        /* margin-top: 30px; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="all">
+      <div class="div-1">
+        <div class="img-1">
+          <img src="images/image-equilibrium.jpg" height="250" width="250" />
+        </div>
+        <div class="con-1">Equilibrium #3429</div>
+
+        <div class="con-2">
+          Our Equilibrium collection promotes balance and calm.
+        </div>
+
+        <div class="con-3">
+          <div class="con-3-1">
+            <svg
+              class="svg-1"
+              width="11"
+              height="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                fill="#00FFF8"
+              />
+            </svg>
+            0.041 ETH
+          </div>
+          <div class="con-3-2">
+            <svg
+              class="svg-1"
+              width="17"
+              height="17"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                fill="#8BACD9"
+              />
+            </svg>
+            3 days left
+          </div>
+        </div>
+
+        <div class="con-4">
+          <div class="end-img"><img src="images/image-avatar.png" /></div>
+
+          <div class="end-2">
+            Creation of
+            <span class="end-1">Jules Wyvern</span>
+          </div>
+        </div>
+      </div>
+      <div class="div-1">
+        <div class="img-1">
+          <img src="images/image-equilibrium.jpg" height="250" width="250" />
+        </div>
+        <div class="con-1">Equilibrium #3429</div>
+
+        <div class="con-2">
+          Our Equilibrium collection promotes balance and calm.
+        </div>
+
+        <div class="con-3">
+          <div class="con-3-1">
+            <svg
+              class="svg-1"
+              width="11"
+              height="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                fill="#00FFF8"
+              />
+            </svg>
+            0.041 ETH
+          </div>
+          <div class="con-3-2">
+            <svg
+              class="svg-1"
+              width="17"
+              height="17"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                fill="#8BACD9"
+              />
+            </svg>
+            3 days left
+          </div>
+        </div>
+
+        <div class="con-4">
+          <div class="end-img"><img src="images/image-avatar.png" /></div>
+
+          <div class="end-2">
+            Creation of
+            <span class="end-1">Jules Wyvern</span>
+          </div>
+        </div>
+      </div>
+      <div class="div-1">
+        <div class="img-1">
+          <img src="images/image-equilibrium.jpg" height="250" width="250" />
+        </div>
+        <div class="con-1">Equilibrium #3429</div>
+
+        <div class="con-2">
+          Our Equilibrium collection promotes balance and calm.
+        </div>
+
+        <div class="con-3">
+          <div class="con-3-1">
+            <svg
+              class="svg-1"
+              width="11"
+              height="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                fill="#00FFF8"
+              />
+            </svg>
+            0.041 ETH
+          </div>
+          <div class="con-3-2">
+            <svg
+              class="svg-1"
+              width="17"
+              height="17"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                fill="#8BACD9"
+              />
+            </svg>
+            3 days left
+          </div>
+        </div>
+
+        <div class="con-4">
+          <div class="end-img"><img src="images/image-avatar.png" /></div>
+
+          <div class="end-2">
+            Creation of
+            <span class="end-1">Jules Wyvern</span>
+          </div>
+        </div>
+      </div>
+      <div class="div-1">
+        <div class="img-1">
+          <img src="images/image-equilibrium.jpg" height="250" width="250" />
+        </div>
+        <div class="con-1">Equilibrium #3429</div>
+
+        <div class="con-2">
+          Our Equilibrium collection promotes balance and calm.
+        </div>
+
+        <div class="con-3">
+          <div class="con-3-1">
+            <svg
+              class="svg-1"
+              width="11"
+              height="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                fill="#00FFF8"
+              />
+            </svg>
+            0.041 ETH
+          </div>
+          <div class="con-3-2">
+            <svg
+              class="svg-1"
+              width="17"
+              height="17"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                fill="#8BACD9"
+              />
+            </svg>
+            3 days left
+          </div>
+        </div>
+
+        <div class="con-4">
+          <div class="end-img"><img src="images/image-avatar.png" /></div>
+
+          <div class="end-2">
+            Creation of
+            <span class="end-1">Jules Wyvern</span>
+          </div>
+        </div>
+      </div>
+      <div class="div-1">
+        <div class="img-1">
+          <img src="images/image-equilibrium.jpg" height="250" width="250" />
+        </div>
+        <div class="con-1">Equilibrium #3429</div>
+
+        <div class="con-2">
+          Our Equilibrium collection promotes balance and calm.
+        </div>
+
+        <div class="con-3">
+          <div class="con-3-1">
+            <svg
+              class="svg-1"
+              width="11"
+              height="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                fill="#00FFF8"
+              />
+            </svg>
+            0.041 ETH
+          </div>
+          <div class="con-3-2">
+            <svg
+              class="svg-1"
+              width="17"
+              height="17"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                fill="#8BACD9"
+              />
+            </svg>
+            3 days left
+          </div>
+        </div>
+
+        <div class="con-4">
+          <div class="end-img"><img src="images/image-avatar.png" /></div>
+
+          <div class="end-2">
+            Creation of
+            <span class="end-1">Jules Wyvern</span>
+          </div>
+        </div>
+      </div>
+      <div class="div-1">
+        <div class="img-1">
+          <img src="images/image-equilibrium.jpg" height="250" width="250" />
+        </div>
+        <div class="con-1">Equilibrium #3429</div>
+
+        <div class="con-2">
+          Our Equilibrium collection promotes balance and calm.
+        </div>
+
+        <div class="con-3">
+          <div class="con-3-1">
+            <svg
+              class="svg-1"
+              width="11"
+              height="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                fill="#00FFF8"
+              />
+            </svg>
+            0.041 ETH
+          </div>
+          <div class="con-3-2">
+            <svg
+              class="svg-1"
+              width="17"
+              height="17"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                fill="#8BACD9"
+              />
+            </svg>
+            3 days left
+          </div>
+        </div>
+
+        <div class="con-4">
+          <div class="end-img"><img src="images/image-avatar.png" /></div>
+
+          <div class="end-2">
+            Creation of
+            <span class="end-1">Jules Wyvern</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
